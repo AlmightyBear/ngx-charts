@@ -12313,7 +12313,7 @@ var HeatCellSeriesComponent = /** @class */ (function () {
                     y: _this.yScale(cell.name),
                     width: _this.xScale.bandwidth(),
                     height: _this.yScale.bandwidth(),
-                    fill: _this.colors.getColor(value),
+                    fill: value==0?'#ffffff':_this.colors.getColor(value),
                     data: value,
                     label: Object(__WEBPACK_IMPORTED_MODULE_1__common_label_helper__["a" /* formatLabel */])(cell.name),
                     series: row.name
